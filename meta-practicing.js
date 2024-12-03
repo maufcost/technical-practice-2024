@@ -144,8 +144,8 @@ const findStringPermutations = (s, b) => {
 }
 
 const areSubstringsEqual = (s1, s2) => {
-  const arr1 = s1.split(" ");
-  const arr2 = s2.split(" ");
+  const arr1 = s1.split(""); // Empty parameter means we'll be splitting by character.
+  const arr2 = s2.split("");
 
   // arr, a: 1, r: 2
   // ara, a: 2, r: 1
