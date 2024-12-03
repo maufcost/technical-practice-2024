@@ -31,6 +31,8 @@ class LinkedList {
 
     // Add a new node with the given value at the beginning of the list
     prepend(value) {
+        const newNode = new Node(value);
+        
         if (this.head) {
             // The list is populated already
             newNode.next = this.head;
